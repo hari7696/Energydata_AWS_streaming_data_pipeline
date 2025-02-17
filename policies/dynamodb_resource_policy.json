@@ -1,0 +1,14 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "Statement1",
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "*"
+			},
+			"Action": "*",
+			"Resource": "arn:aws:dynamodb:us-east-1:209089076730:table/EnergyData"
+		}
+	]
+}

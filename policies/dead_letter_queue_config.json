@@ -1,0 +1,3 @@
+{
+    "RedrivePolicy": "{\"maxReceiveCount\": \"3\", \"deadLetterTargetArn\": \"arn:aws:sqs:us-east-1:209089076730:FailedEnergyEvents\"}"
+}

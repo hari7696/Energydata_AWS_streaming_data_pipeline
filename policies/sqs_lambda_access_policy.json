@@ -1,0 +1,12 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "*"
+            ],
+            "Resource": "arn:aws:sqs:us-east-1:209089076730:S3EventQueue"
+        }
+    ]
+}

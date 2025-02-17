@@ -1,0 +1,19 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowS3ToSendMessages",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "s3.amazonaws.com"
+      },
+      "Action": "sqs:SendMessage",
+      "Resource": "arn:aws:sqs:us-east-1:209089076730:S3EventQueue",
+      "Condition": {
+        "ArnLike": {
+          "aws:SourceArn": "arn:aws:s3:::energydata2025"
+        }
+      }
+    }
+  ]
+}
